@@ -10,10 +10,9 @@ import static com.model.util.Help.println;
  */
 public class MyCollection {
     public static void main(String args[]){
-        FirstTouchArrayList();
-
-
+//        FirstTouchArrayList();
 //        CollectionAddElement();
+        PrintCollection();
 
     }
 
@@ -68,5 +67,35 @@ public class MyCollection {
         println(list);
         list.set(0,99);
         println(list);
+    }
+
+    /*
+    * 容器的打印
+    * */
+    public static void PrintCollection(){
+        println(fill(new ArrayList<String>()));
+        println(fill(new LinkedList<String>()));
+        println(fill(new HashSet<String>()));
+        println(fill(new TreeSet<String>()));
+        println(fill(new LinkedHashSet<String>()));
+        println(fill(new HashMap<String, String>()));
+        println(fill(new TreeMap<String, String>()));
+        println(fill(new LinkedHashMap<String, String>()));
+    }
+
+    static Collection fill(Collection<String> collection){
+        collection.add("First");
+        collection.add("Second");
+        collection.add("Third");
+        collection.add("Fourth");
+        return collection;
+    }
+
+    static Map fill(Map<String,String> map){
+        map.put("First","一");
+        map.put("Second","二");
+        map.put("Third","三");
+        map.put("Fourth","四");
+        return map;
     }
 }
