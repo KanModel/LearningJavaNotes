@@ -87,7 +87,7 @@ public class MyCollection {
         collection.add("First");
         collection.add("Second");
         collection.add("Third");
-        collection.add("Fourth");
+        collection.add("Third");
         return collection;
     }
 
@@ -95,7 +95,7 @@ public class MyCollection {
         map.put("First","一");
         map.put("Second","二");
         map.put("Third","三");
-        map.put("Fourth","四");
+        map.put("Third","③");
         return map;
     }
 }
