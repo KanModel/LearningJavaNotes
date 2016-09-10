@@ -12,8 +12,8 @@ public class MyCollection {
     public static void main(String args[]){
 //        FirstTouchArrayList();
 //        CollectionAddElement();
-        PrintCollection();
-
+//        PrintCollection();
+        list();
     }
 
     /*
@@ -97,5 +97,33 @@ public class MyCollection {
         map.put("Third","三");
         map.put("Third","③");
         return map;
+    }
+
+    public static void list(){
+        Random rand = new Random(47);
+        List<Do> dos = new ArrayList<Do>();
+        Collections.addAll(dos,new Apple(),new Orange(),new Apple(),new Banana(),new Pear(),new Orange(),new Pear());
+//        List<Do> dos = Arrays.asList(new Apple(),new Orange(),new Apple(),new Banana(),new Pear(),new Orange(),new Pear());
+        println("1:" + dos);
+        Apple a = new Apple();
+        dos.add(a);
+        println("2:" + dos);
+        println("3:" + dos.contains(a));
+        println(dos.remove(a));
+        println(dos + " gg " + dos.contains(a));
+//        dos.remove(a);
+        Do d = dos.get(2);
+        println("4:" + d + " " + dos.indexOf(d));
+        Do pear = new Pear();
+        println("5:" + dos.indexOf(pear));
+        println("6:" + dos.remove(pear));
+        println("7:" + dos.remove(d));
+        println("8:" + dos);
+        dos.add(3, new Banana());
+        println("9:" + dos);
+        List<Do> sub = dos.subList(1, 4);
+        println("sublist:" + sub);
+        println("10:" + dos.containsAll(sub));
+//        Collections.sort(sub);
     }
 }

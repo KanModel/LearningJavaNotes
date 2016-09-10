@@ -92,4 +92,28 @@ class Apple extends Do{
     }
 }
 
+class Banana extends Do{
+    Banana(){
+        super();
+        println(this);
+    }
+
+    @Override
+    public String toString() {
+        return "Banana " + getId();
+    }
+}
+
+class Pear extends Do{
+    Pear(){
+        super();
+        println(this);
+    }
+
+    @Override
+    public String toString() {
+        return "Pear " + getId();
+    }
+}
+
 
