@@ -126,4 +126,8 @@ public class MyCollection {
         println("10:" + dos.containsAll(sub));
 //        Collections.sort(sub);
     }
+
+    public static void MyIteratior(){
+
+    }
 }
