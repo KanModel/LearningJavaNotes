@@ -18,6 +18,7 @@ public class Help {
     }
 
     public static void println(){
-        println("Nothing");
+//        println("Nothing");
+        System.out.println();
     }
 }

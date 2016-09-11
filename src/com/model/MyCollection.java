@@ -1,7 +1,11 @@
 package com.model;
 
+import com.model.pets.Pet;
+import com.model.pets.Pets;
+
 import java.util.*;
 
+import static com.model.util.Help.print;
 import static com.model.util.Help.println;
 
 /**
@@ -13,7 +17,9 @@ public class MyCollection {
 //        FirstTouchArrayList();
 //        CollectionAddElement();
 //        PrintCollection();
-        list();
+//        list();
+//        myIteratior()
+        myDisplay();
     }
 
     /*
@@ -127,7 +133,48 @@ public class MyCollection {
 //        Collections.sort(sub);
     }
 
-    public static void MyIteratior(){
-        
+    public static void myIteratior(){
+        List<Pet> pets = Pets.arrayList(12);
+        Iterator<Pet> iterator = pets.iterator();
+        while (iterator.hasNext()){
+            Pet p = iterator.next();
+            print(p.id() + ":" + p + " ");
+        }
+        println();
+        for (Pet p:pets){
+            print(p.id() + ":" + p + " ");
+        }
+        println();
+        iterator = pets.iterator();
+        for (int i = 0;i < 6;i++){
+            iterator.next();
+            iterator.remove();
+        }
+        System.out.println(pets);
+        {
+            iterator = pets.iterator();
+            Pet p = iterator.next();
+            print(p.id() + ":" + p + " ");
+        }
+    }
+
+    public static void myDisplay(){
+        ArrayList<Pet> pets = Pets.arrayList(8);
+        LinkedList<Pet> pets1 = new LinkedList<>(pets);
+        HashSet<Pet> pets2 = new HashSet<>(pets);
+        TreeSet<Pet> pets3 = new TreeSet<>(pets);
+        display(pets.iterator());
+        display(pets1.iterator());
+        display(pets2.iterator());
+        display(pets3.iterator());
+
+    }
+
+    static void display(Iterator<Pet> iterator){
+        while (iterator.hasNext()){
+            Pet p = iterator.next();
+            print(p.id() + ":" + p + " ");
+        }
+        println();
     }
 }
