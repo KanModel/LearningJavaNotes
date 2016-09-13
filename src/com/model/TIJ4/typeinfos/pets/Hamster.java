@@ -1,5 +1,5 @@
 //: typeinfo/pets/Hamster.java
-package com.model.pets;
+package com.model.TIJ4.typeinfos.pets;
 
 public class Hamster extends Rodent {
   public Hamster(String name) { super(name); }

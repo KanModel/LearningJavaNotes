@@ -1,4 +1,4 @@
-package com.model.pets;
+package com.model.TIJ4.typeinfos.pets;
 
 /**
  * Created by kgdwhsk on 2016/9/11.

@@ -1,6 +1,8 @@
 package com.model;
 
 
+import com.model.TIJ4.typeinfos.toys.ToyTest;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -10,7 +12,8 @@ import java.util.List;
 public class MyRTTI {
     public static void main(String args[]){
 //        myR();
-        myClass();
+//        myClass();
+        new ToyTest().main(args);
     }
 
     public static void myR(){

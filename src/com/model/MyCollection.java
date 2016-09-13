@@ -1,7 +1,7 @@
 package com.model;
 
-import com.model.pets.Pet;
-import com.model.pets.Pets;
+import com.model.TIJ4.typeinfos.pets.Pet;
+import com.model.TIJ4.typeinfos.pets.Pets;
 
 import java.util.*;
 

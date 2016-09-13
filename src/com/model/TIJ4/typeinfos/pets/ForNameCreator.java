@@ -1,5 +1,5 @@
 //: typeinfo/pets/ForNameCreator.java
-package com.model.pets;
+package com.model.TIJ4.typeinfos.pets;
 import java.util.*;
 
 public class ForNameCreator extends PetCreator {
