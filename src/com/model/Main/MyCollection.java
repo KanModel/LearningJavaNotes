@@ -1,4 +1,4 @@
-package com.model;
+package com.model.Main;
 
 import com.model.TIJ4.typeinfos.pets.Pet;
 import com.model.TIJ4.typeinfos.pets.Pets;

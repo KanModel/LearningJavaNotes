@@ -1,4 +1,4 @@
-package com.model;
+package com.model.Main;
 
 
 import com.model.TIJ4.typeinfos.toys.ToyTest;

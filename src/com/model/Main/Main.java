@@ -1,9 +1,6 @@
-package com.model;
+package com.model.Main;
 
 import java.util.*;
-import java.util.concurrent.Executor;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 
 import static com.model.util.Help.*;
