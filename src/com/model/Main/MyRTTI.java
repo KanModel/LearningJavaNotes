@@ -20,7 +20,8 @@ public class MyRTTI {
         * Class.forName()要用全部包名
         * */
 //        new ToyTest().main(args);
-        类字面常量();
+//        类字面常量();
+        泛化Class引用();
     }
 
     public static void myR(){
@@ -59,6 +60,16 @@ public class MyRTTI {
         }
         System.out.println("After creating initable3 ref");
         System.out.println(Initable3.snf);
+    }
+
+    public static void 泛化Class引用(){
+        Class intClass = int.class;
+//        Class ss = Integer.TYPE;
+//        Class sss = Integer.class;
+        Class<Integer> genericI = int.class;
+        genericI = Integer.class;
+        Class<?> ic = int.class;
+        ic = double.class;
     }
 }
 
