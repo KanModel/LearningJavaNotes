@@ -12,28 +12,35 @@ interface Shoots {}
 class Toy {
     // Comment out the following default constructor
     // to see NoSuchMethodError from (*1*)
-    Toy() {}
+    Toy() {
+        System.out.println("Toy");
+    }
     Toy(int i) {}
 }
 
 class FancyToy extends Toy
         implements HasBatteries, Waterproof, Shoots {
-    FancyToy() { super(1); }
+    FancyToy() {
+        System.out.println("Fancy toy");
+    }
 }
 
 public class ToyTest {
+    public void ToyTest(){
+        System.out.println("ToyTest");
+    }
     static void printInfo(Class cc) {
-        print("Class name: " + cc.getName() +
+        System.out.println("Class name: " + cc.getName() +
                 " is interface? [" + cc.isInterface() + "]");
-        print("Simple name: " + cc.getSimpleName());
-        print("Canonical name : " + cc.getCanonicalName());
+        System.out.println("Simple name: " + cc.getSimpleName());
+        System.out.println("Canonical name : " + cc.getCanonicalName());
     }
     public static void main(String[] args) {
         Class c = null;
         try {
-            c = Class.forName("FancyToy");
+            c = Class.forName("com.model.TIJ4.typeinfos.toys.FancyToy");
         } catch(ClassNotFoundException e) {
-            print("Can't find FancyToy");
+            System.out.println("Can't find FancyToy");
             System.exit(1);
         }
         printInfo(c);
@@ -51,7 +58,7 @@ public class ToyTest {
             * 虚拟构造器
             * */
         } catch(InstantiationException e) {
-            print("Cannot instantiate");
+            System.out.println("Cannot instantiate");
             System.exit(1);
         } catch(IllegalAccessException e) {
             print("Cannot access");
